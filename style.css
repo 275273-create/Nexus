@@ -1,11 +1,10 @@
-
-body {
+     body {
       background-color: #e9dfd7;
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    .navbar-custom {
+    header {
       background: #000000;
       border-radius: 18px;
       margin: 20px auto;
