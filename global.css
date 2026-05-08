@@ -33,7 +33,7 @@ header {
   width: auto;
   object-fit: contain;
   position: absolute; /* sai do fluxo, não empurra o header */
-  bottom: -20px;      /* controla o quanto vaza para baixo */
+  bottom: 0px;      /* controla o quanto vaza para baixo */
 }
 
 .menu {
