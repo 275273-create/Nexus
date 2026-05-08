@@ -29,11 +29,11 @@ header {
 }
 
 .logo img {
-  height: 100px; /* tamanho que quiser */
+  height: 90px; /* tamanho que quiser */
   width: auto;
   object-fit: contain;
   position: absolute; /* sai do fluxo, não empurra o header */
-  bottom: 0px;      /* controla o quanto vaza para baixo */
+  bottom: -20px;      /* controla o quanto vaza para baixo */
 }
 
 .menu {
