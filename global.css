@@ -25,15 +25,15 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  overflow: visible;
+  position: relative; /* ancora a imagem */
 }
 
 .logo img {
-  height: 150px;
+  height: 150px; /* tamanho que quiser */
   width: auto;
   object-fit: contain;
-  position: relative;
-  z-index: 1;
+  position: absolute; /* sai do fluxo, não empurra o header */
+  bottom: -20px;      /* controla o quanto vaza para baixo */
 }
 
 .menu {
