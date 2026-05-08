@@ -1,48 +1,229 @@
-     body {
-      background-color: #e9dfd7;
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+/* === reset & base === */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-    header {
-      background: #000000;
-      border-radius: 18px;
-      margin: 20px auto;
-      padding: 12px 30px;
-      width: 90%;
-      height: 200px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+body {
+  background-color: #e9dfd7;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    
-    .logo {
-      display: flex;
-      align-items: center;
-    }
+/* === header === */
+header {
+  background: #000000;
+  border-radius: 18px;
+  margin: 20px auto;
+  padding: 14px 30px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .logo img {
-      height: 50px;
-      width: auto;
-      object-fit: contain;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
- 
-    .menu {
-      display: flex;
-      gap: 25px;
-    }
+.logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
 
-    .menu li {
-      text-decoration: none;
-      color: #ccc;
-      font-size: 15px;
-      position: relative;
-      transition: 0.3s;
-    }
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-    .menu a:hover {
-      color: #fff;
-    }
-     
+.menu a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+#btn-entrar {
+  background: #ff7a00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#btn-entrar:hover {
+  background: #e66a00;
+}
+
+/* === botões laranja reutilizáveis === */
+.btn-laranja {
+  background: #ff7a00;
+  color: white;
+  border-radius: 10px;
+  padding: 12px 25px;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-laranja:hover {
+  background: #e66a00;
+  color: white;
+}
+
+/* === página itens === */
+.container_itens {
+  padding: 20px;
+}
+
+.container_cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.titulo_item {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.local_item,
+.data_item {
+  margin: 2px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.situacao_item {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #e9f5e1;
+  color: #3b6d11;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.img_card {
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.btn_contato a {
+  display: inline-block;
+  background: #ff7a00;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn_contato a:hover {
+  background: #e66a00;
+}
+
+.navegacao_itens {
+  display: flex;
+  gap: 10px;
+  padding: 16px 20px 0;
+}
+
+.navegacao_itens button a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer_main {
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+}
+
+.footer_main button a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* === página sobre/contato === */
+.titulo span {
+  color: #ff7a00;
+  font-weight: bold;
+}
+
+.contato-caixa {
+  background: #f1f3f5;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icone-caixa {
+  background: #ff7a00;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.importante-box {
+  background: linear-gradient(180deg, #ff8a00, #ff6a00);
+  color: white;
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(255, 122, 0, 0.3);
+}
+
+.importante-box .lock {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff7a00;
+  font-size: 25px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
