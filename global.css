@@ -29,7 +29,7 @@ header {
 }
 
 .logo img {
-  height: 150px; /* tamanho que quiser */
+  height: 100px; /* tamanho que quiser */
   width: auto;
   object-fit: contain;
   position: absolute; /* sai do fluxo, não empurra o header */
