@@ -34,7 +34,7 @@
       gap: 25px;
     }
 
-    .menu a {
+    .menu li {
       text-decoration: none;
       color: #ccc;
       font-size: 15px;
