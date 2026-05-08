@@ -101,11 +101,7 @@
     }
 
     .logo img {
-<<<<<<< HEAD
-      height: 85px;
-=======
-      height: 50px;
->>>>>>> 46fde7dedc7d69387605df8a0386c39a126d24c4
+      height: 80px;
       width: auto;
       object-fit: contain;
     }
