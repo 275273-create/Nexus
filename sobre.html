@@ -14,7 +14,7 @@
       <img src="img/logo.png" alt="Logo Achados e Perdidos">
     </div>
 
-    <nav aria-label="Menu principal">
+    <nav id="menu_principal">
       <ul class="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="itens.html">Itens</a></li>
@@ -22,42 +22,40 @@
         <li><a href="sobre.html">Sobre</a></li>
       </ul>
     </nav>
-
-    <button id="btn-entrar">Entrar</button>
   </header>
 
-  <main class="container py-5">
-    <div class="row">
-      <div class="col-md-7">
-        <h2 class="titulo mb-3"><b>Contato e</b> <span>Retirada de Itens</span></h2>
-        <p class="text-muted mb-4">Caso tenha reconhecido um objeto na lista, entre em contato com o responsável para a devolução.</p>
+  <main id="conteúdo_principal">
+    <div class="contralizar">
+      <div class="contato">
+        <h2 class="titulo_contato"><b>Contato e</b> <span>Retirada de Itens</span></h2>
+        <p class="texto_contato">Caso tenha reconhecido um objeto na lista, entre em contato com o responsável para a devolução.</p>
 
         <address>
-          <div class="contato-caixa">
-            <div class="icone-caixa" aria-hidden="true"><i class="bi bi-envelope"></i></div>
+          <div class="contato_caixa">
+            <div class="icone_caixa"><i class="bi bi-envelope"></i></div>
             <div><b>E-mail:</b><br>achadoseperdidos@faculdade.com</div>
           </div>
 
-          <div class="contato-caixa">
-            <div class="icone-caixa" aria-hidden="true"><i class="bi bi-telephone"></i></div>
+          <div class="contato_caixa">
+            <div class="icone_caixa"><i class="bi bi-telephone"></i></div>
             <div><b>Telefone:</b><br>(XX) XXXXX-XXXX</div>
           </div>
         </address>
 
-        <a href="cadastrar.html" class="btn-laranja mt-3">Cadastrar Item +</a>
+        <a href="cadastrar.html" class="btn">Cadastrar Item +</a>
       </div>
 
-      <div class="col-md-5 text-center">
-        <div class="importante-box mt-5">
-          <div class="lock" aria-hidden="true"><i class="bi bi-lock-fill"></i></div>
-          <h4 class="mt-4">Importante</h4>
-          <p class="mt-3">
+      <div class="importante">
+        <div class="importante_caixa">
+          <div class="seguranca"><i class="bi bi-lock-fill"></i></div>
+          <h4 class="titulo_importante">Importante</h4>
+          <p class="info_importante">
             A devolução do item será realizada apenas após a validação das informações fornecidas.<br><br>
             Isso garante mais segurança para o verdadeiro dono.
           </p>
         </div>
 
-        <a href="index.html" class="btn btn-light mt-4">← Voltar para Início</a>
+        <a href="index.html" class="btn">← Voltar para Início</a>
       </div>
     </div>
   </main>

@@ -12,7 +12,7 @@
       <img src="img/logo.png" alt="Logo Achados e Perdidos">
     </div>
 
-    <nav aria-label="Menu principal">
+    <nav id="menu_principal">
       <ul class="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="itens.html">Itens</a></li>
@@ -20,24 +20,23 @@
         <li><a href="sobre.html">Sobre</a></li>
       </ul>
     </nav>
-
-    <button id="btn-entrar">Entrar</button>
   </header>
 
-  <main>
-    <section>
+  <main id="conteúdo_principal">
+    <section id="info_itens">
       <h1>Itens Cadastrados</h1>
       <p>Abaixo estão os objetos que já foram registrados e aprovados pelo responsável.</p>
     </section>
 
-    <section>
-      <nav class="navegacao_itens" aria-label="Filtrar itens">
+    <section id="itens_principal">
+      <nav class="nav_itens">
         <button><a href="#">Todos</a></button>
         <button><a href="#">Achados</a></button>
         <button><a href="#">Perdidos</a></button>
       </nav>
 
-      <div class="container_itens">
+      <!--Inicio do card item-->
+      <div class="itens_cards">
         <ul class="container_cards">
           <li class="item_card">
             <article class="card">
@@ -53,18 +52,22 @@
               </div>
 
               <footer class="footer_cards">
-                <button class="btn_contato"><a href="#">Entrar em contato</a></button>
+                <button class="btn"><a href="#">Entrar em contato</a></button>
               </footer>
             </article>
           </li>
         </ul>
       </div>
     </section>
+    <!--Fim do card item-->
 
-    <section class="footer_main">
-      <button><a href="cadastrar.html">Cadastrar itens +</a></button>
-      <button><a href="index.html">Voltar para o início</a></button>
-    </section>
   </main>
+
+    <footer>
+      <section class="footer">
+        <button><a href="cadastrar.html">Cadastrar itens +</a></button>
+        <button><a href="index.html">Voltar para o início</a></button>
+      </section>
+    </footer>
 </body>
 </html>
