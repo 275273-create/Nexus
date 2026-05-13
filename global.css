@@ -168,7 +168,7 @@ header {
   font-weight: bold;
 }
 
-.contato-caixa {
+.contato_caixa {
   background: #f1f3f5;
   border-radius: 12px;
   padding: 15px;
@@ -178,7 +178,7 @@ header {
   gap: 15px;
 }
 
-.icone-caixa {
+.icone_caixa {
   background: #ff7a00;
   color: white;
   width: 45px;
@@ -191,7 +191,7 @@ header {
   flex-shrink: 0;
 }
 
-.importante-box {
+.importante_caixa {
   background: linear-gradient(180deg, #ff8a00, #ff6a00);
   color: white;
   border-radius: 20px;
@@ -200,7 +200,7 @@ header {
   box-shadow: 0 10px 20px rgba(255, 122, 0, 0.3);
 }
 
-.importante-box .lock {
+.importante_caixa .lock {
   position: absolute;
   top: -25px;
   left: 50%;
